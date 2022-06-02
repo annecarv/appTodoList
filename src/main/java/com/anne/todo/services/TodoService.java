@@ -12,9 +12,9 @@ import com.anne.todo.repositories.TodoRepository;
 @Service
 public class TodoService {
 
-	@Autowired 
+	@Autowired
 	private TodoRepository repository;
-	
+
 	public Todo findById(Integer id) {
 		Optional<Todo> obj = repository.findById(id);
 		return obj.orElse(null);
@@ -34,5 +34,14 @@ public class TodoService {
 		List<Todo> list = repository.findAll();
 		return list;
 	}
-	
+
+	public Todo create(Todo obj) {
+		obj.setId(null);
+		return repository.save(obj);
+	}
+
+	public void delete(Integer id) {
+		repository.deleteById(id);
+	}
+
 }
