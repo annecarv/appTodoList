@@ -27,7 +27,7 @@ public class DBService {
 		Todo t3 = new Todo(null, "Dançar", "Ir pra academia",
 				LocalDateTime.parse("25/03/2022 10:40", formatter), false);
 		Todo t4 = new Todo(null, "Comer uma banana", "Brincar com a gata",
-				LocalDateTime.parse("25/03/2022 10:40", formatter), false);
+				LocalDateTime.parse("25/03/2022 10:40", formatter), true);
 
 		todoRepository.saveAll(Arrays.asList(t1, t2, t3, t4));
 	}
