@@ -19,12 +19,12 @@ import {MatIconModule} from '@angular/material/icon';
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    ReadAllComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    ReadAllComponent,
     MatToolbarModule,
     MatCardModule,
     MatButtonModule,

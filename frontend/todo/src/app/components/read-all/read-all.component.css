@@ -1,10 +1,6 @@
 .container {
     width: 85%;
     margin: auto;
-
-    .badge {
-        margin-top: 1.5rem;
-    }
 }
 
 .badge {
